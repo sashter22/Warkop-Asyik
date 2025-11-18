@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warkop Asyik - Citeureup</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .menu-item .desc {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #4a2c2a;
+        min-height: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>WARKOP ASYIK</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#lokasi">Lokasi</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero">
+      <h2>Ngopi, Nyantai, Nikmat!</h2>
+      <p>
+        Nikmati secangkir kopi, gorengan, mie hangat, aneka makanan dan aneka
+        minuman lainnya disini
+      </p>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang">
+      <h2>Tentang Kami</h2>
+      <p>
+        Warkop Asyik adalah tempat nongkrong santai yang menghadirkan suasana
+        hangat dan ramah untuk semua kalangan. Kami menyajikan aneka minuman
+        seperti kopi, teh, susu, dan minuman segar lainnya. Kami juga menawarkan
+        beragam pilihan makanan mulai dari camilan, gorengan, mie goreng, mie
+        rebus, hingga hidangan rumahan seperti pecel ayam dan pecel lele. Dengan
+        konsep sederhana namun nyaman, Warkop Asyik menjadi tempat yang pas
+        untuk berkumpul bersama teman atau beristirahat setelah aktivitas. Kami
+        berkomitmen memberikan pelayanan terbaik, cita rasa yang konsisten, dan
+        harga yang tetap bersahabat bagi semua pelanggan. Hadir di lingkungan
+        masyarakat Citeureup, Warkop Asyik berupaya menjadi ruang singgah yang
+        menyenangkan dan mudah diingat, menciptakan pengalaman yang tidak
+        terlupakan bagi setiap pengunjung yang telah singgah di warkop kami.
+        Kami berharap Warkop Asyik dapat menjadi tempat favorit anda untuk
+        menikmati kebersamaan dan menciptakan momen-momen sederhana yang penuh
+        arti setiap kali anda datang berkunjung kembali. Kami selalu menantikan
+        kehadiran anda dan siap menyambut setiap senyum dan cerita yang dibawa.
+        Datanglah, nikmati suasana hangat, dan jadikan Warkop Asyik sebagai
+        tempat anda melepas penat sekaligus berbagi momen indah bersama
+        orang-orang terdekat.
+      </p>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu">
+      <h2>Tersedia:</h2>
+      <div class="menu-list">
+        <div
+          class="menu-item"
+          onclick="showDesc(this,'Susu segar, nikmat diminum kapan saja')"
+        >
+          <img src="img/Susu.jpg" alt="Susu" />
+          <p>Susu</p>
+          <p class="desc"></p>
+        </div>
+
+        <div
+          class="menu-item"
+          onclick="showDesc(this,'Kopi susu hangat, cocok untuk sarapan')"
+        >
+          <img src="img/Kopi_susu.jpg" alt="Kopi_Susu" />
+          <p>Kopi Susu</p>
+          <p class="desc"></p>
+        </div>
+
+        <div
+          class="menu-item"
+          onclick="showDesc(this,'Kopi hitam asli, aromanya kuat')"
+        >
+          <img src="img/Kopi.jpg" alt="Kopi" />
+          <p>Kopi</p>
+          <p class="desc"></p>
+        </div>
+
+        <div
+          class="menu-item"
+          onclick="showDesc(this,'Teh manis hangat, pas untuk santai')"
+        >
+          <img src="img/Teh_manis.jpg" alt="Teh_Manis" />
+          <p>Teh Manis</p>
+          <p class="desc"></p>
+        </div>
+
+        <div
+          class="menu-item"
+          onclick="showDesc(this,'Nutrisari segar, minuman buah praktis')"
+        >
+          <img src="img/Nutrisari.jpg" alt="Nutrisari" />
+          <p>Nutrisari</p>
+          <p class="desc"></p>
+        </div>
+
+        <div
+          class="menu-item"
+          onclick="showDesc(this,'Jasjus buah segar, menyegarkan')"
+        >
+          <img src="img/Jasjus.jpg" alt="Jasjus" />
+          <p>Jasjus</p>
+          <p class="desc"></p>
+        </div>
+
+        <div
+          class="menu-item"
+          onclick="showDesc(this,'Gorengan renyah, cemilan nikmat')"
+        >
+          <img src="img/Gorengan.jpg" alt="Gorengan" />
+          <p>Gorengan</p>
+          <p class="desc"></p>
+        </div>
+
+        <div
+          class="menu-item"
+          onclick="showDesc(this,'Mie rebus hangat, cocok untuk cuaca dingin')"
+        >
+          <img src="img/Mie_rebus.jpg" alt="Mie_Rebus" />
+          <p>Mie Rebus</p>
+          <p class="desc"></p>
+        </div>
+
+        <div
+          class="menu-item"
+          onclick="showDesc(this,'Mie goreng lembut dan gurih')"
+        >
+          <img src="img/Mie_goreng.jpg" alt="Mie_Goreng" />
+          <p>Mie Goreng</p>
+          <p class="desc"></p>
+        </div>
+
+        <div
+          class="menu-item"
+          onclick="showDesc(this,'Nasi hangat dengan ayam goreng dan sambal khas')"
+        >
+          <img src="img/Pecel_ayam.jpg" alt="Pecel_Ayam" />
+          <p>Pecel Ayam</p>
+          <p class="desc"></p>
+        </div>
+
+        <div
+          class="menu-item"
+          onclick="showDesc(this,'Lele goreng crispy, lalapan & sambal')"
+        >
+          <img src="img/Pecel_lele.jpg" alt="Pecel_Lele" />
+          <p>Pecel Lele</p>
+          <p class="desc"></p>
+        </div>
+
+        <div
+          class="menu-item"
+          onclick="showDesc(this,'Ayam goreng empuk dipenyet + sambal pedas')"
+        >
+          <img src="img/Ayam_penyet.jpg" alt="Ayam_Penyet" />
+          <p>Ayam Penyet</p>
+          <p class="desc"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lokasi -->
+    <section id="lokasi">
+      <h2>Lokasi</h2>
+      <p>
+        Jl.Branta Mulya No.24 RT 01/RW 08 Karang Asem Timur, Kecamatan
+        Citeureup, Kabupaten Bogor
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak">
+      <p>@Warkop_Asyik</p>
+      <a
+        href="https://wa.me/6289638715710"
+        target="_blank"
+        style="
+          color: white;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="22"
+          viewBox="0 0 32 32"
+          fill="#25D366"
+        >
+          <path
+            d="M16.027 3.003c-7.155 0-12.973 5.818-12.973 12.973 0 2.287.597 4.523 1.733 6.492L3 29l6.689-1.742c1.902 1.04 4.056 1.589 6.338 1.589h.004c7.155 0 12.973-5.818 12.973-12.973S23.182 3.003 16.027 3.003zm7.652 18.548c-.322.902-1.894 1.778-2.627 1.889-.67.104-1.534.149-2.476-.155-.57-.182-1.302-.425-2.244-.83-3.945-1.705-6.516-5.662-6.716-5.93-.201-.268-1.602-2.131-1.602-4.065 0-1.934 1.018-2.889 1.379-3.289.362-.401.794-.502 1.058-.502.264 0 .529.003.76.014.246.011.574-.093.898.685.322.777 1.09 2.683 1.188 2.877.099.195.165.421.033.689-.133.268-.198.421-.396.645-.198.223-.419.497-.599.667-.198.198-.404.414-.174.812.23.397 1.02 1.682 2.192 2.722 1.507 1.33 2.779 1.744 3.177 1.944.397.198.629.166.86-.099.231-.264.992-1.157 1.258-1.554.264-.397.529-.331.898-.198.372.132 2.351 1.11 2.75 1.312.397.198.66.297.76.463.099.165.099.953-.223 1.855z"
+          ></path>
+        </svg>
+        0896-3871-5710
+      </a>
+    </footer>
+
+    <script>
+      function showDesc(item, text) {
+        const desc = item.querySelector(".desc");
+        desc.innerText = text;
+      }
+    </script>
+  </body>
+</html>
