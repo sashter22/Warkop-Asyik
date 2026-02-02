@@ -11,15 +11,13 @@ export default function Navbar() {
       // Efek blur/putih navbar pas scroll
       setScrolled(window.scrollY > 50);
 
-      // LOGIKA DETEKSI SECTION AKTIF:
-      // Kita cek semua section, mana yang lagi nangkring di depan mata
       const sections = ["home", "about", "menu", "location", "contact"];
 
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          // Kalau bagian atas section sudah masuk area layar (offset 100px)
+
           if (rect.top <= 100 && rect.bottom >= 100) {
             setActiveHash(`#${section}`);
             break;
