@@ -1,4 +1,6 @@
 // src/components/AboutUs.tsx
+import Image from "next/image";
+
 export default function AboutUs() {
   return (
     <section
@@ -6,23 +8,26 @@ export default function AboutUs() {
       className="py-24 md:py-32 bg-white scroll-mt-20 overflow-hidden"
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
-        {" "}
-        {/* Tambah padding biar konten lebih ke tengah */}
         <div className="grid lg:grid-cols-12 items-center gap-12 lg:gap-16">
-          {/* SISI KIRI: VISUAL (Dibuat lebih menonjol) */}
           <div className="lg:col-span-5 relative flex justify-center lg:justify-start">
             <div className="relative w-full max-w-[380px] lg:max-w-none">
-              {/* Dekorasi Belakang (Dibuat lebih besar) */}
+              {/* Dekorasi Background */}
               <div className="absolute -bottom-6 -right-6 w-full h-full bg-amber-100 rounded-[3rem] -z-10"></div>
 
-              {/* Frame Foto Utama */}
-              <div className="aspect-[3/4] bg-zinc-50 rounded-[3rem] overflow-hidden border-8 border-white shadow-[0_20px_50px_rgba(0,0,0,0.1)]">
-                <div className="w-full h-full flex items-center justify-center text-zinc-300 font-medium italic p-12 text-center leading-relaxed">
-                  [ Foto Suasana Hangat Warkop Asyik ]
-                </div>
+              {/* Bingkai Foto  */}
+              <div className="aspect-[3/4] bg-zinc-100 rounded-[3rem] overflow-hidden border-8 border-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-10">
+                <Image
+                  // URL Unsplash
+                  src="https://images.unsplash.com/photo-1554118811-1e0d58224f24"
+                  alt="Suasana Hangat Warkop Asyik"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transform hover:scale-105 transition-transform duration-700"
+                />
               </div>
 
-              {/* Badge SINCE 2026 (Diperhalus posisinya) */}
+              {/*  SINCE 2025 */}
               <div className="absolute -top-8 -left-8 bg-amber-500 text-white py-4 px-6 rounded-2xl shadow-xl rotate-[-12deg] z-20 border-4 border-white">
                 <span className="font-black text-lg uppercase tracking-tight">
                   Since 2025
