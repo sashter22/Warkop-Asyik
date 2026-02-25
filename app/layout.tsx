@@ -14,6 +14,10 @@ export const metadata = {
     "Tempat Nongkrong Bogor",
     "Warkop Asyik",
   ],
+  // TINGGAL TAMBAHIN INI AJA, KANG:
+  verification: {
+    google: "C7DTJi-DYv2phdD54oMvnPeDwqg86AaYDF0Hj2Fk2lY",
+  },
   openGraph: {
     title: "Warkop Asyik - Citeureup",
     description: "Tempat ngopi paling asyik di Citeureup Bogor.",
